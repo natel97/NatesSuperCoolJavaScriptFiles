@@ -23,7 +23,10 @@ function XO(str) {
     }
 
 //Test it out in the log
-console.log(XO("Boxes upon BOXES of stuff"))
+console.log(XO("Boxes upon BOXES of stuff")) // false
+console.log(XO("xxxooo")) // true
+console.log(XO("xoxxoo")) // true
+console.log(XO("")) // true
 
 //Misc tests from codewars! :)
 // Test.assertEquals(XO('xo'),true);

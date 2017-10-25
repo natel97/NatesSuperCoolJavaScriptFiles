@@ -1,0 +1,27 @@
+{
+  "name": "dayTwo",
+  "version": "1.0.0",
+  "description": "A basic program from day two of JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build" : "babel src/ -d build/",
+    "prestart" : "npm build",
+    "start" : "node ./src",
+    "repl" : "babel-node"
+  },
+  "keywords": [],
+  "author": "Nathanial Lubitz",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.0.1",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "standard": "^10.0.3"
+  },
+  "standard" : {
+    "parser" : "babel-eslint"
+  }
+}

@@ -15,5 +15,6 @@ let fizzBuzzFilteredArray = (arr) => _.filter(arr, function(o) { return (fizzBuz
 //Pair values with words!
 let fizzBuzzArray = (arr) => _.map(fizzBuzzFilteredArray(arr),fizzBuzz)
 
-//---->Run the thing!<----
+//---->Run the thing!<----\\
 console.log(fizzBuzzArray(_.range(1,100)))
+console.log(fizzBuzzArray(_.range(70,88)))
