@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build" : "babel src/ -d build/",
-    "prestart" : "npm build",
-    "start" : "node ./src",
-    "repl" : "babel-node"
+    "build": "babel src/ -d build/",
+    "prestart": "npm run build",
+    "start": "node ./build",
+    "repl": "babel-node"
   },
   "keywords": [],
   "author": "Nathanial Lubitz",
@@ -21,7 +21,7 @@
     "babel-preset-stage-0": "^6.24.1",
     "standard": "^10.0.3"
   },
-  "standard" : {
-    "parser" : "babel-eslint"
+  "standard": {
+    "parser": "babel-eslint"
   }
 }
